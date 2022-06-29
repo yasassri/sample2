@@ -6,6 +6,7 @@ pipeline {
             steps {
                 script {
                   echo "Hello ${REF_YCR}"
+                    echo "${scm.branches[0].name}"
                 }
             }
         }
