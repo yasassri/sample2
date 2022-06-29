@@ -10,7 +10,7 @@ pipeline {
                         echo "${scm.branches[0].name}"
                         def envName = "${scm.branches[0].name}"
                         echo "$envName"
-                        echo "$envName"
+                        echo envName
                     }
                    
                 }
