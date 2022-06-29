@@ -6,7 +6,12 @@ pipeline {
             steps {
                 script {
                   echo "Hello ${REF_YCR}"
-                    echo "${scm.branches[0].name}"
+                    script {
+                        echo "${scm.branches[0].name}"
+                        def envName = "scm.branches[0].name"
+                        echo "$envName"
+                    }
+                   
                 }
             }
         }
