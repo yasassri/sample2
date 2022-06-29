@@ -8,11 +8,10 @@ pipeline {
                   echo "Hello ${REF_YCR}"
                     script {
                         echo "${scm.branches[0].name}"
-                        String envName = "${scm.branches[0].name}"
+                        String envName = "${scm.branches[0].name}".substring(2, envName.length()-1)
                         echo "$envName envName"
-                        echo envName
                         def env = System.getenv()
-                        println(env[envName.substring(1, envName.length()-1)])
+                        println(env[envName])
                     }
                    
                 }
