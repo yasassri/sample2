@@ -12,7 +12,7 @@ pipeline {
                         echo "$envName envName"
                         echo envName
                         def env = System.getenv()
-                        println(env['REF_YCR'])
+                        println(env[envName.substring(1, envName.length()-1)])
                     }
                    
                 }
