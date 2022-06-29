@@ -8,8 +8,8 @@ pipeline {
                   echo "Hello ${REF_YCR}"
                     script {
                         echo "${scm.branches[0].name}"
-                        def envName = "${scm.branches[0].name}"
-                        echo "$envName"
+                        String envName = "${scm.branches[0].name}"
+                        echo "$envName envName"
                         echo envName
                     }
                    
