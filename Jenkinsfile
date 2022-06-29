@@ -11,7 +11,7 @@ pipeline {
                          String branchName = "${scm.branches[0].name}"
                          String envNameOnly = branchName.substring(2, branchName.length()-1)
                          def env = System.getenv()[envNameOnly]
-                         eho "$env"
+                         echo "$env"
                     }
                    
                 }
