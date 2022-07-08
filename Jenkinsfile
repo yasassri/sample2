@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello5') {
+        stage('Hello6') {
             steps {
                 script {
                   echo "Hello ${REF_YCR}"
