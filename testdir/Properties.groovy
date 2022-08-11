@@ -1,4 +1,4 @@
-class Properties {
+Class Properties {
   def WEB_SERVER
   def DB_SERVER
   def DB_NAME
